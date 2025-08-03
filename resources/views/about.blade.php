@@ -1,11 +1,6 @@
-@php
-    $title = 'About Us';
-    $description = 'Learn more about our company and values.';
-    $keywords = 'about, company, values';
-    $author = 'Your Company Name';
-    $robots = 'index, follow';
-@endphp
+@extends('app')
 
-<div>
-    {{ $title }}
-</div>
+@section('contents')
+    <h1>About Us</h1>
+    <p>Learn more about our company and values.</p>
+@endsection

@@ -1,3 +1,5 @@
-<div>
-    <!-- Simplicity is the ultimate sophistication. - Leonardo da Vinci -->
-</div>
+@extends('app')
+@section('contents')
+    <p>Welcome to the home page!</p>
+    @include('gallery')
+@endsection
