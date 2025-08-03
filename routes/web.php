@@ -15,7 +15,9 @@ Route::get('/user/{id}', function ($id) {
 })->name('user.show');
 
 Route::get('/contact', function () {
-    return view('Contact');
+    $title = "Contact Us";
+    $books = ['Book 1', 'Book 2', 'Book 3'];
+    return view('Contact', ['title' => $title, 'books' => $books]);
 })->name('contact');
 
 Route::get('/about', function () {
